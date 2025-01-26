@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Software Designer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loader Section -->
+    <div id="loader" class="loader">
+        <div class="pulse"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i></i>Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+                <li><a href="#skills"> <i class="fas fa-paint-brush"></i>Skills</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I’m Avadhut</h1>
+            <p>Software Designer | UX Enthusiast | Problem Solver</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn">View Portfolio</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/profile Picture.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate software designer with a strong focus on creating intuitive and user-friendly digital
+            experiences.
+            With years of experience in the tech industry, I specialize in blending functionality with aesthetics to
+            deliver impactful designs.
+            My goal is to solve complex problems through innovative solutions, whether it's building efficient software,
+            designing seamless interfaces, or collaborating with cross-functional teams.
+            <br><br>
+            When I'm not designing, you can find me exploring new design trends, attending industry events, or mentoring
+            aspiring developers and designers.
+            I believe in continuous learning and strive to stay updated with the latest technologies and methodologies
+            in the industry.
+        </p>
+        <a href="resume.pdf" download class="btn">Download My Resume</a>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3><i class="fas fa-code"></i> Programming</h3>
+                <p>HTML, CSS, JavaScript, Python</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-pencil-alt"></i> Design Tools</h3>
+                <p>Figma, Adobe XD</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-cogs"></i> Other Skills</h3>
+                <p>Problem Solving, Team Collaboration</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="card-grid">
+            <div class="card">
+                <a href="https://imgaeslider.netlify.app" class="card-link" onclick="showLoader(event, 'https://imgaeslider.netlify.app')"> <!-- Make the card clickable -->
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3><i class="fas fa-desktop"></i> Modern Image Slider</h3>
+                    <p>Web application built with HTML and CSS.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://imgaeslider.netlify.app" class="card-link" onclick="showLoader(event, 'https://imgaeslider.netlify.app')"> <!-- Make the card clickable -->
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3><i class="fas fa-mobile-alt"></i> Project 2</h3>
+                    <p>Mobile app designed for Android and iOS.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Avadhut. Designed with ❤️.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
