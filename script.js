@@ -31,3 +31,14 @@ function showLoader(event, link) {
         window.location.href = link; // Redirect to the project link after the delay
     }, 2000); // 2-second delay (you can adjust this as per your preference)
 }
+
+// function toggleNavbar() {
+//   const navbar = document.querySelector('.navbar');
+//   navbar.classList.toggle('open'); // Toggle 'open' class to show/hide the navbar items
+// }
+// Toggle the navbar when the hamburger button is clicked
+function toggleNavbar() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('open'); // Toggle the 'open' class to show/hide the navbar items
+}
+

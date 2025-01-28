@@ -393,3 +393,172 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+
+
+/* responisiveness */
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    width: 90%; /* 90% of the width */
+    transform: translate(-50%, 15%); /* Adjusting the position */
+    height: auto; /* Navbar height adjusts for content */
+    flex-direction: column;
+    padding: 10px 0; /* More padding for vertical layout */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stacking navbar items vertically */
+    align-items: center;
+    width: 100%; /* Full width */
+  }
+
+  .navbar ul li {
+    margin: 10px 0; /* Adjust spacing between items */
+    width: auto; /* Let the list items adjust to the container */
+    text-align: center;
+  }
+
+  .navbar ul li a {
+    padding: 15px 20px; /* Make the links larger for easier tapping */
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    padding: 30px 10px;
+    height: auto; /* Adjust height */
+    text-align: center; /* Center align the text */
+  }
+
+  .hero .hero-content h1 {
+    font-size: 2.5rem; /* Adjusting the font size for mobile */
+  }
+
+  .hero .hero-content p {
+    font-size: 1.2rem; /* Adjusting the font size for mobile */
+  }
+
+  .hero-image img {
+    width: 80%; /* Adjust image size */
+    margin-top: 20px; /* Add spacing between text and image */
+  }
+
+  /* Section */
+  section {
+    padding: 30px 10px;
+  }
+
+  section h2 {
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  /* Card Grid */
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Stack cards */
+  }
+
+  .card {
+    padding: 15px; /* Adjust padding */
+    font-size: 0.9rem; /* Adjust text size */
+  }
+
+  /* Contact Form */
+  form input,
+  form textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    font-size: 0.9rem; /* Adjust font size */
+  }
+
+  form button {
+    width: 100%; /* Full width button */
+    padding: 12px 0;
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  /* Footer */
+  footer {
+    padding: 15px 0;
+    font-size: 0.9rem; /* Adjust text size */
+  }
+}
+
+/* For Very Small Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  /* Navbar */
+  .navbar {
+    width: 100%; /* Full width on extremely small screens */
+    height: auto; /* Adjust height */
+    padding: 10px 0; /* Vertical padding */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack items */
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    margin: 8px 0; /* Smaller spacing for very small screens */
+  }
+
+  .navbar ul li a {
+    padding: 12px 18px; /* Adjust the link padding */
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 20px;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 2rem; /* Reduce the font size */
+  }
+
+  .hero .hero-content p {
+    font-size: 1rem; /* Reduce the font size */
+  }
+
+  .hero-image img {
+    width: 90%; /* Adjust image size */
+  }
+
+  /* Section */
+  section {
+    padding: 20px 10px;
+  }
+
+  section h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  /* Card Grid */
+  .card-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  .card {
+    padding: 12px; /* Adjust padding */
+    font-size: 0.85rem; /* Adjust text size */
+  }
+
+  /* Contact Form */
+  form input,
+  form textarea {
+    padding: 8px;
+    font-size: 0.85rem; /* Adjust font size */
+  }
+
+  form button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.9rem; /* Adjust font size */
+  }
+
+  /* Footer */
+  footer {
+    padding: 10px 0;
+    font-size: 0.8rem; /* Adjust text size */
+  }
+}
