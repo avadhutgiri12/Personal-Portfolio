@@ -96,9 +96,6 @@ header ul {
 .hero {
   display: flex;
   align-items: center;
-  position: relative;
-  top: 5.5rem;
-  margin-bottom: 5rem;
   justify-content: space-around;
   height: 100vh;
   padding: 20px;
@@ -417,6 +414,9 @@ footer {
   /* Hero Section */
   .hero {
     flex-direction: column;
+    position: relative;
+    top: 5.5rem;
+    margin-bottom: 5rem;
     padding: 30px 10px;
     height: auto; /* Adjust height */
     text-align: center; /* Center align the text */
