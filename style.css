@@ -194,6 +194,7 @@ h2::after {
   right: 50%;
   transform: translate(-50%,30%);
   border-radius: 25px;
+  box-shadow: rgba(0, 0 , 0, 0.2) 5px 10px 10px ;
 }
 
 .navbar ul{
